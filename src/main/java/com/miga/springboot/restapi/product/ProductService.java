@@ -11,7 +11,7 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    public List<Product> getProducts() {
+    public List<Product> getAllProducts() {
         return (List<Product>) productRepository.findAll();
     }
 
@@ -19,7 +19,23 @@ public class ProductService {
         return productRepository.findOne(id);
     }
 
-    public void addproduct(Product product) {
+    public void createProduct(Product product) {
         productRepository.save(product);
     }
+
+    public void updateProduct(long id, Product newProduct) {
+        Product product = productRepository.findOne(id);
+        product.setName(newProduct.getName());
+        product.setPrice(newProduct.getPrice());
+        productRepository.save(product);
+    }
+
+    public void deleteProduct(long id) {
+        productRepository.delete(id);
+    }
+
+    public void deleteAllProducts() {
+        productRepository.deleteAll();
+    }
+
 }
