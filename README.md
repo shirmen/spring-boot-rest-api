@@ -1,1 +1,1 @@
-# Spring Boot REST API implemented with JPA and Embedded h2 database
+# Spring Boot REST API sample implemented with Spring Data JPA and embedded h2 database
