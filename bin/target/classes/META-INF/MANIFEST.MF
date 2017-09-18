@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: REST API
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: migaakuz
+Implementation-Vendor-Id: com.miga.springboot
+Build-Jdk: 1.8.0_71
+Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-
+ rest-api/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
