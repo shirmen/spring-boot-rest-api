@@ -1,4 +1,4 @@
-package com.miga.springboot.restapi.product;
+package com.miga.springboot.data.jpa.sample.product;
 
 import org.springframework.data.repository.CrudRepository;
 

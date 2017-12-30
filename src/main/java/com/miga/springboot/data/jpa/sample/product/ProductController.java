@@ -1,4 +1,4 @@
-package com.miga.springboot.restapi.product;
+package com.miga.springboot.data.jpa.sample.product;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class ProductController {
     }
 
     @GetMapping("product/{id}")
-    public Product getProdcut(@PathVariable("id") long id) {
+    public Product getProduct(@PathVariable("id") long id) {
         return productService.getProduct(id);
     }
 
